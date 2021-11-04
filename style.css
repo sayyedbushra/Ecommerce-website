@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'EB Garamond', serif;
+  
 }
 .navbar{
     display:flex;
@@ -65,7 +66,36 @@ p{
     line-height: 60px;
     margin:25px 0;
 }
+/* dasd */
 
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #c27b92 0%, #5FC3E4  51%, #E55D87  100%)
+}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: inline-block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+
+/* sadasd */
 .btn{
     display:inline-block;
     background:#e02222;
@@ -79,7 +109,9 @@ p{
     background: hsl(0, 65%, 83%);
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    /* background: radial-gradient(#fff,#ffd6d6); */
+     background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%); 
+
 }
 .header .row{
     margin-top: 70px;
@@ -196,7 +228,7 @@ p{
 .col-3 p{
     font-size: 12px;
     margin:12px 0 ;
-    color:#777;
+    color:rgb(114, 110, 110);
 }
 .testimonial .col-3 h3{
     font-weight: 600;
@@ -438,8 +470,103 @@ th:last-child{
     text-align: right;
 }
 
+/*-----------------------------account-page------------------*/
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#f0c5c5);
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin:auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight:bold;
+    padding:0 10px;
+    color:#555;
+    cursor:pointer;
+    width: 100px;
+    display:inline-block
+}
+.banner{
+    transition: .3s ease-in-out;
+    filter: drop-shadow(0 4px 1px #f0054f)
+    drop-shadow(0 4px 1px #09b6f0)
+    drop-shadow(0 4px 1px #f80653);
+   
+}
+/* .banner:hover{
+    filter: drop-shadow(0 4px 1px #E55D87)
+    drop-shadow(0 4px 1px #5FC3E4)
+    drop-shadow(0 4px 1px #E55D87);
+    transform: rotate(25deg);
+} */
+.cat{
+    transition: .3s;
+  transform: perspective(1000px) rotateX(10deg);
+  box-shadow: 1px 7px 5px  rgba(0,0,0,0.1);
+}
+.cat:hover{
+    transform: perspective(600px) rotateX(0deg);
+  box-shadow: none;
+}
 
+.form-btn{
+    display:inline-block;
+}
+.form-container form{
+    max-width:300px;
+    padding:0 20px;
+  position:absolute;
+    top:130px;
+    transition: transform 0.5s ease-in-out;
 
+}
+form input{
+    width:100%;
+    height:30px;
+    margin:10px 0;
+    padding:0 10px;
+    border: 1px solid #ccc;
+
+}
+form .btn{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    margin:10px 0;
+}
+
+form .btn:focus{
+    outline:none;
+
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left:0;
+
+}
+form a {
+    font-size: 12px;
+}
+#Indicator{
+    width:100px;
+    border:none;
+    background:#ff523b;
+    height:3px;
+    margin-top:8px;
+    transform:translateX(100px);
+    transition:transform 1s;
+
+}
 
 
 /*-----------------------------Media query for menu-------------------*/
