@@ -7,4 +7,4 @@
 - [x] Product page
 - [x] Product detail page
 - [x] Add to cart Page 
-- [ ] Login page
+- [x] Login page
