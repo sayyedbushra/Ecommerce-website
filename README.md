@@ -4,6 +4,7 @@
 
 ### Task
 - [x] home page
-- [ ] Product page
-- [ ] Product detail page
-- [ ] Add to cart Page 
+- [x] Product page
+- [x] Product detail page
+- [x] Add to cart Page 
+- [ ] Login page
